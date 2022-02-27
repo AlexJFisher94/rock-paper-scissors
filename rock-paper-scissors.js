@@ -4,6 +4,14 @@ const gameChoices = ['rock', 'paper', 'scissors'];
 let playerScore = 0;
 let computerScore = 0;
 let result;
+/*
+button = document.querySelectorAll('.weapons');
+button.addEventListener('mouseover', focus);
+
+function focus(event) {
+    item.setAttribute("style", "background-color:blue;")
+}
+*/
 
 //randomly generates a choice for computer
 function computerPlay() {
@@ -74,6 +82,16 @@ if (playerScore > computerScore) {
   }
 }
 
-game();
+
+
+
+
+
 
 console.log(playerScore, computerScore);
+
+
+
+
+
+
