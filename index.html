@@ -3,29 +3,36 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Rock Paper Scissors</title>
+        <title>Hammer Armor Spear</title>
         <link rel="stylesheet" href="style.css">
-        <script src="rock-paper-scissors.js"></script>
+        <script src="rock-paper-scissors.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>Warrior... choose a battle item.</header>
+        <header>Hammer | Armor | Spear</header>
+        <h2>Hammer beats Armor. Armor beats Spear. Spear beats Hammer.</h2>
+        <h2 id="choose">Choose a battle item.</h2>
+        <h1></h1>
         <div id="weapon-container">
-            <div class="container" id="hammer-container">
-                <h1>Hammer</h1>
-                <button class="weapons" id="hammer"><img src="images/hammer.jpg" alt="sword image"></button>
+                <button class="weapons hammer focus"><img src="images/hammer.jpg" alt="sword image"></button>
+                <button class="weapons armor focus"><img src="images/armor.jpg" alt="armor image"></button>
+                <button class="weapons spear focus"><img src="images/spear.jpg" alt="spear image"></button>
+        </div>
+        <div id="score-container">
+            <div id="enemy">
+                <p>Enemy's Choice:</p>
+                <div id="enemy-choice"><p></p></div>
             </div>
-            <div class="container" id="armor-container">
-                <h1>Armor</h1>
-                <button class="weapons" id="armor"><img src="images/armor.jpg" alt="armor image"></button>
-            </div>
-            <div class="container" id="spear-container">
-                <h1>Spear</h1>
-                <button class="weapons" id="spear"><img src="images/spear.jpg" alt="spear image"></button>
+            <div id="scoreboard">
+                <div id="scores">
+                <p id="wins-losses">Wins: 0 | Losses: 0</p>
+                <p id="round">Round: 0</p>
+                </div>
+                <p id="battle-alert">Combat Updates:</p>
             </div>
         </div>
-
+        <button class="play-again" hidden>Play again?</button>
     </body>
 </html>
