@@ -1,6 +1,5 @@
 'use strict';
 
-
 let rounds = document.querySelector('#round');
 let winsLosses = document.querySelector('#wins-losses');
 let playerScore = 0;

@@ -37,8 +37,8 @@ h2 {
     background-color: white;
     width: 60%;
     height: 200px;
-    max-width: 750px;
-    margin-top: 0;
+    max-width: 795px;
+    margin-top: 40px;
 }
 
 .container {
@@ -77,12 +77,6 @@ button {
     cursor: pointer;
 }
 
-h1 {
-    color: rgb(21, 104, 107);
-    font-family: 'MedievalSharp', cursive;
-    font-size: 30px;
-}
-
 #score-container {
     display: flex;
     flex: 1;
@@ -110,6 +104,7 @@ h1 {
     font-family: 'MedievalSharp', cursive;
     padding-left: 15px;
     font-size: 20px;
+    margin-left: -10px;
 }
 
 #enemy-choice {
@@ -145,3 +140,14 @@ h1 {
     background-color: aliceblue;
 }
 
+footer {
+    color: rgb(21, 104, 107);
+    font-family: 'MedievalSharp', cursive;
+    text-align: center;
+    border-top: 2px rgb(21, 104, 107) solid;
+    padding: 8px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+}
